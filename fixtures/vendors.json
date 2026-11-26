@@ -1,0 +1,33 @@
+[
+  {
+    "name": "inventory",
+    "required": [
+      "orderId",
+      "supplierId",
+      "items"
+    ],
+    "example": {
+      "orderId": "order-sample",
+      "supplierId": "vendor-a",
+      "items": [
+        {
+          "itemId": "controller-a",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "signing",
+    "required": [
+      "agreementId",
+      "partyId",
+      "termsDigest"
+    ],
+    "example": {
+      "agreementId": "agreement-sample",
+      "partyId": "member-a",
+      "termsDigest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+  }
+]

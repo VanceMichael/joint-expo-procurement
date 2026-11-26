@@ -1,0 +1,159 @@
+[
+  {
+    "id": "member-a",
+    "kind": "member",
+    "links": [],
+    "budgetMinor": 180000
+  },
+  {
+    "id": "member-b",
+    "kind": "member",
+    "links": [],
+    "budgetMinor": 90000
+  },
+  {
+    "id": "group-a",
+    "kind": "buying-group",
+    "links": [
+      "member-a",
+      "member-b"
+    ],
+    "required": [
+      "controller",
+      "arm",
+      "service"
+    ],
+    "deadline": "2026-12-01T12:00:00Z"
+  },
+  {
+    "id": "vendor-a",
+    "kind": "supplier",
+    "links": []
+  },
+  {
+    "id": "vendor-b",
+    "kind": "supplier",
+    "links": []
+  },
+  {
+    "id": "controller-a",
+    "kind": "item",
+    "links": [],
+    "family": "X",
+    "role": "controller"
+  },
+  {
+    "id": "arm-a",
+    "kind": "item",
+    "links": [],
+    "family": "X",
+    "role": "arm"
+  },
+  {
+    "id": "arm-b",
+    "kind": "item",
+    "links": [],
+    "family": "Y",
+    "role": "arm"
+  },
+  {
+    "id": "service-a",
+    "kind": "item",
+    "links": [],
+    "family": "X",
+    "role": "service"
+  },
+  {
+    "id": "compatibility",
+    "kind": "compatibility",
+    "links": [],
+    "allowed": [
+      [
+        "controller-a",
+        "arm-a",
+        "service-a"
+      ]
+    ]
+  },
+  {
+    "id": "need-a",
+    "kind": "member-need",
+    "links": [
+      "member-a",
+      "group-a"
+    ],
+    "roles": [
+      "controller",
+      "service"
+    ],
+    "paymentShare": "2/3"
+  },
+  {
+    "id": "need-b",
+    "kind": "member-need",
+    "links": [
+      "member-b",
+      "group-a"
+    ],
+    "roles": [
+      "arm"
+    ],
+    "paymentShare": "1/3"
+  },
+  {
+    "id": "quote-a",
+    "kind": "incoming-sealed-quote",
+    "links": [
+      "vendor-a",
+      "group-a",
+      "controller-a",
+      "arm-a",
+      "service-a"
+    ],
+    "revision": 1,
+    "bundleMinor": 240000,
+    "standaloneMinor": {
+      "controller-a": 140000,
+      "arm-a": 80000,
+      "service-a": 40000
+    },
+    "stock": 1,
+    "deliveryBy": "2026-12-08"
+  },
+  {
+    "id": "quote-b",
+    "kind": "incoming-sealed-quote",
+    "links": [
+      "vendor-b",
+      "group-a",
+      "arm-b"
+    ],
+    "revision": 1,
+    "bundleMinor": 70000,
+    "stock": 2,
+    "deliveryBy": "2026-12-06"
+  },
+  {
+    "id": "need-revised",
+    "kind": "incoming-requirement-change",
+    "links": [
+      "group-a"
+    ],
+    "required": [
+      "controller",
+      "arm",
+      "service"
+    ],
+    "family": "X",
+    "revision": 2
+  },
+  {
+    "id": "exit-b",
+    "kind": "incoming-member-withdrawal",
+    "links": [
+      "member-b",
+      "group-a"
+    ],
+    "at": "2026-12-01T12:10:00Z"
+  }
+]

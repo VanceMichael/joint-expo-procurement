@@ -1,0 +1,26 @@
+[
+  {
+    "id": "actor-1",
+    "role": "buyer",
+    "organisation": "vendor-a",
+    "token": "synthetic-joint-expo-procurement-buyer"
+  },
+  {
+    "id": "actor-2",
+    "role": "supplier",
+    "organisation": "vendor-a",
+    "token": "synthetic-joint-expo-procurement-supplier"
+  },
+  {
+    "id": "actor-3",
+    "role": "reviewer",
+    "organisation": "vendor-a",
+    "token": "synthetic-joint-expo-procurement-reviewer"
+  },
+  {
+    "id": "actor-4",
+    "role": "procurement",
+    "organisation": "vendor-a",
+    "token": "synthetic-joint-expo-procurement-procurement"
+  }
+]
