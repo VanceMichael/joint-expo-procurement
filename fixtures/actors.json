@@ -2,25 +2,43 @@
   {
     "id": "actor-1",
     "role": "buyer",
-    "organisation": "vendor-a",
-    "token": "synthetic-joint-expo-procurement-buyer"
+    "organisation": "group-a",
+    "token": "synthetic-joint-expo-procurement-buyer",
+    "subjectId": "member-a"
   },
   {
     "id": "actor-2",
     "role": "supplier",
     "organisation": "vendor-a",
-    "token": "synthetic-joint-expo-procurement-supplier"
+    "token": "synthetic-joint-expo-procurement-supplier",
+    "subjectId": "vendor-a"
   },
   {
     "id": "actor-3",
     "role": "reviewer",
-    "organisation": "vendor-a",
-    "token": "synthetic-joint-expo-procurement-reviewer"
+    "organisation": "group-a",
+    "token": "synthetic-joint-expo-procurement-reviewer",
+    "subjectId": "group-a"
   },
   {
     "id": "actor-4",
     "role": "procurement",
-    "organisation": "vendor-a",
-    "token": "synthetic-joint-expo-procurement-procurement"
+    "organisation": "group-a",
+    "token": "synthetic-joint-expo-procurement-procurement",
+    "subjectId": "group-a"
+  },
+  {
+    "id": "buyer-b",
+    "role": "buyer",
+    "subjectId": "member-b",
+    "organisation": "group-a",
+    "token": "synthetic-q9-buyer-b"
+  },
+  {
+    "id": "supplier-b",
+    "role": "supplier",
+    "subjectId": "vendor-b",
+    "organisation": "vendor-b",
+    "token": "synthetic-q9-supplier-b"
   }
 ]
